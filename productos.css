@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.header {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.categorias {
+  text-align: center;
+  margin: 20px;
+}
+
+.categorias button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background: #6b4f3f;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.categorias button:hover {
+  opacity: 0.9;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.producto {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.producto h4 {
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  font-weight: bold;
+  color: #6b4f3f;
+}

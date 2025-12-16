@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confecciones Leo</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">Confecciones Leo</h1>
+
+  <nav class="menu">
+    <ul class="menu-principal">
+      <li><a href="index.html">Inicio</a></li>
+
+      <li class="dropdown">
+        <a href="#">Productos ▾</a>
+        <ul class="submenu">
+          <li><a href="productos.html#collares">Collares</a></li>
+          <li><a href="productos.html#carteras">Carteras</a></li>
+          <li><a href="productos.html#costura">Costura</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Productos y servicios de costura</h2>
+  <p>Hecho a mano con dedicación y cariño</p>
+
+  <div class="hero-buttons">
+    <a href="productos.html" class="btn">Ver catálogo</a>
+    <a href="https://wa.me/569XXXXXXXX" class="btn whatsapp">WhatsApp</a>
+  </div>
+</section>
+
+<!-- ⭐ NUEVA SECCIÓN: CONFECCIONES -->
+<section class="confecciones">
+  <h3>Confecciones a medida</h3>
+  <p class="confecciones-texto">
+    Realizamos trabajos personalizados de costura para el hogar y eventos,
+    adaptándonos a tus medidas, gustos y necesidades.
+  </p>
+
+  <div class="confecciones-grid">
+    <div class="confeccion">
+      <h4>🪟 Cortinas</h4>
+      <p>Confección a medida para ventanas y ambientes.</p>
+    </div>
+
+    <div class="confeccion">
+      <h4>🛏️ Sábanas y fundas</h4>
+      <p>Sábanas, fundas de almohada y plumón personalizadas.</p>
+    </div>
+
+    <div class="confeccion">
+      <h4>🪑 Fundas de silla</h4>
+      <p>Fundas decorativas o protectoras para sillas.</p>
+    </div>
+
+    <div class="confeccion">
+      <h4>🍽️ Manteles</h4>
+      <p>Manteles a medida para mesas de hogar o eventos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section class="section">
+  <h3>Productos destacados</h3>
+
+  <div class="slider-container">
+    <button class="slider-btn" onclick="mover(-1)">◀</button>
+
+    <div class="slider">
+      <div class="productos-slider">
+
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Collar 1</h4><p>$6.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Collar 2</h4><p>$7.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Cartera 1</h4><p>$15.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Cartera 2</h4><p>$18.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Bolso</h4><p>$20.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Ajuste pantalón</h4><p>$5.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Basta falda</h4><p>$4.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Cierre</h4><p>$6.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Costura a medida</h4><p>$10.000</p></div>
+        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Mantel</h4><p>$12.000</p></div>
+
+      </div>
+    </div>
+
+    <button class="slider-btn" onclick="mover(1)">▶</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Confecciones Leo. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
