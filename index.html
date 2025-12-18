@@ -9,63 +9,35 @@
 <body>
 
 <header class="header">
-  <h1 class="logo">Confecciones Leo</h1>
-
-  <nav class="menu">
-    <ul class="menu-principal">
-      <li><a href="index.html">Inicio</a></li>
-
-      <li class="dropdown">
-        <a href="#">Productos ▾</a>
-        <ul class="submenu">
-          <li><a href="productos.html#collares">Collares</a></li>
-          <li><a href="productos.html#carteras">Carteras</a></li>
-          <li><a href="productos.html#costura">Costura</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  <div class="logo">
+    <a href="index.html">
+      <img src="foto/Foto de perfil de Instagram con Logo Sencillo Profesional Elegante Círculo Negro.png"
+           alt="Confecciones Leo">
+    </a>
+  </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <h2>Productos y servicios de costura</h2>
-  <p>Hecho a mano con dedicación y cariño</p>
-
-  <div class="hero-buttons">
+  <div class="hero-content">
+    <h2>Confecciones a Medida</h2>
+    <p>Calidad, dedicación y trabajo artesanal</p>
     <a href="productos.html" class="btn">Ver catálogo</a>
-    <a href="https://wa.me/569XXXXXXXX" class="btn whatsapp">WhatsApp</a>
   </div>
 </section>
 
-<!-- ⭐ NUEVA SECCIÓN: CONFECCIONES -->
+<!-- CONFECCIONES -->
 <section class="confecciones">
   <h3>Confecciones a medida</h3>
   <p class="confecciones-texto">
-    Realizamos trabajos personalizados de costura para el hogar y eventos,
-    adaptándonos a tus medidas, gustos y necesidades.
+    Realizamos trabajos personalizados de costura para el hogar y eventos.
   </p>
 
   <div class="confecciones-grid">
-    <div class="confeccion">
-      <h4>🪟 Cortinas</h4>
-      <p>Confección a medida para ventanas y ambientes.</p>
-    </div>
-
-    <div class="confeccion">
-      <h4>🛏️ Sábanas y fundas</h4>
-      <p>Sábanas, fundas de almohada y plumón personalizadas.</p>
-    </div>
-
-    <div class="confeccion">
-      <h4>🪑 Fundas de silla</h4>
-      <p>Fundas decorativas o protectoras para sillas.</p>
-    </div>
-
-    <div class="confeccion">
-      <h4>🍽️ Manteles</h4>
-      <p>Manteles a medida para mesas de hogar o eventos.</p>
-    </div>
+    <div class="confeccion"><h4>🪟 Cortinas</h4><p>Confección a medida para ventanas y ambientes.</p></div>
+    <div class="confeccion"><h4>🛏️ Sábanas</h4><p>Sábanas, fundas de almohada y plumón personalizadas.</p></div>
+    <div class="confeccion"><h4>🪑 Fundas</h4><p>Fundas decorativas o protectoras para sillas.</p></div>
+    <div class="confeccion"><h4>🍽️ Manteles</h4><p>Manteles a medida para mesas de hogar o eventos.</p></div>
   </div>
 </section>
 
@@ -74,32 +46,41 @@
   <h3>Productos destacados</h3>
 
   <div class="slider-container">
-    <button class="slider-btn" onclick="mover(-1)">◀</button>
+
+    <!-- botón izquierdo -->
+    <button class="slider-btn slider-btn-left" onclick="mover(-1)">‹</button>
 
     <div class="slider">
-      <div class="productos-slider">
+      <div class="productos-slider" id="productosSlider">
 
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Collar 1</h4><p>$6.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Collar 2</h4><p>$7.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Cartera 1</h4><p>$15.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Cartera 2</h4><p>$18.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Bolso</h4><p>$20.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Ajuste pantalón</h4><p>$5.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Basta falda</h4><p>$4.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Cierre</h4><p>$6.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Costura a medida</h4><p>$10.000</p></div>
-        <div class="producto"><img src="https://via.placeholder.com/300"><h4>Mantel</h4><p>$12.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$6.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$7.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$15.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$8.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$9.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$12.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$10.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$14.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$11.000</p></div>
+        <div class="producto"><img src="foto/IMG_0336.HEIC" alt="Producto"><p>$13.000</p></div>
 
       </div>
     </div>
 
-    <button class="slider-btn" onclick="mover(1)">▶</button>
+    <!-- botón derecho -->
+    <button class="slider-btn slider-btn-right" onclick="mover(1)">›</button>
+
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2025 Confecciones Leo. Todos los derechos reservados.</p>
+  <p>© 2025 Confecciones Leo</p>
 </footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/56964798120" class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 
 <script src="script.js"></script>
 </body>

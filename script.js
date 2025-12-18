@@ -1,21 +1,18 @@
-let posicion = 0;
-const visibles = 3;
+let index = 0;
 
 function mover(direccion) {
-  const slider = document.querySelector('.productos-slider');
-  const total = slider.children.length;
-  const max = total - visibles;
+  const slider = document.getElementById("productosSlider");
+  const productos = document.querySelectorAll(".producto");
+  const visibles = 3;
 
-  posicion += direccion;
+  index += direccion;
 
-  if (posicion > max) {
-    posicion = 0; // vuelve al inicio
-  }
+  if (index < 0) index = productos.length - visibles;
+  if (index > productos.length - visibles) index = 0;
 
-  if (posicion < 0) {
-    posicion = max; // va al final
-  }
+  const ancho = productos[0].offsetWidth + 20;
+  const maxTranslate = (productos.length - visibles) * ancho;
+  const translateX = Math.min(index * ancho, maxTranslate);
 
-  const ancho = 255;
-  slider.style.transform = `translateX(-${posicion * ancho}px)`;
+  slider.style.transform = `translateX(-${translateX}px)`;
 }
